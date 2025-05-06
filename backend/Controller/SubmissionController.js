@@ -6,12 +6,11 @@ const path = require('path');
 exports.createSubmission = async (req, res) => {
   try {
     const { name, email, phone, issue, duration, treatments, allergies, additional } = req.body;
-    const files = req.files;  // Access the uploaded files
+    const files = req.files;
 
     console.log("Form Data:", req.body);
     console.log("Uploaded Files:", files);
-
-    // Create a new submission instance and save it to the database
+    
     const submission = new Submission({
       name,
       email,
@@ -21,10 +20,9 @@ exports.createSubmission = async (req, res) => {
       treatments,
       allergies,
       additional,
-      images: files.map(file => file.path), // Save file paths to DB
+      images: files.map(file => file.path),
     });
 
-    // Save the submission to the database
     await submission.save();
 
     res.status(201).json({ message: 'Submission created successfully', submission });
