@@ -59,7 +59,7 @@ const AdminPage = ({ setToken }) => {
   return (
     <div className="min-h-screen p-8">
       <div className="flex flex-col items-center mb-10">
-        <h1 className="text-4xl mb-4">Hello, Akshita Maan</h1>
+        <h1 className="text-4xl mb-4">Hello, Akshita Mann</h1>
         <Button onClick={handleLogout}>
           Logout
         </Button>
