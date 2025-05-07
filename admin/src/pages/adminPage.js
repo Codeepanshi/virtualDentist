@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '../Components/UI/button'; // Assuming you have a Button component
+import { Button } from '../Components/UI/button';
 
 const AdminPage = ({ setToken }) => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const AdminPage = ({ setToken }) => {
   if (!confirmDelete) return;
 
   try {
-    const res = await fetch(`http://localhost:5000/api/submissions/${id}`, {
+    const res = await fetch(`https://virtualdentist-server.onrender.com/api/submissions/${id}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -28,7 +28,7 @@ const AdminPage = ({ setToken }) => {
 
     if (res.ok) {
       alert('Submission deleted successfully.');
-      setSubmissions(submissions.filter(sub => sub._id !== id)); // Remove from UI
+      setSubmissions(submissions.filter(sub => sub._id !== id));
     } else {
       alert('Failed to delete submission.');
     }
@@ -40,7 +40,7 @@ const AdminPage = ({ setToken }) => {
   
   const fetchSubmission = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/submissions', {
+      const res = await fetch('https://virtualdentist-server.onrender.com/api/submissions', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
