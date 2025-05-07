@@ -13,13 +13,14 @@ const Owner = () => {
           className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover"
         />
         <div className="max-w-2xl text-center md:text-left">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Dr. Akshita Mann</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Dr. Akshita Mann, BDS, MDS, MSD</h2>
           <p className="text-gray-600 text-justify leading-relaxed">
-            Dr. Akshita is a passionate and compassionate dentist with over <strong>13+ years of clinical experience </strong> 
-            in general and cosmetic dentistry. A graduate of a top dental university, she has conducted numerous dental 
-            awareness camps across rural and urban communities. Her mission is to make dental care more <em>accessible, affordable, 
-            and approachable</em> — even from the comfort of your home. This virtual dental camp is her latest initiative 
-            to provide remote consultations and early dental advice for anyone in need.
+            Dr. Akshita Mann is a board-certified endodontist and a Diplomate of the American Board of Endodontics, <strong> with over 13 years of clinical experience </strong> in general and endodontic dentistry. 
+            She holds a Bachelor of Dental Surgery (BDS), a Master of Dental Surgery (MDS), and a Master of Science in Dentistry (MSD). 
+            A graduate of a top dental university, Dr. Mann is both passionate and compassionate about delivering high-quality dental care. 
+            She has led numerous dental awareness camps across rural and urban communities, striving to make dental care more accessible, affordable, and approachable. 
+            With advanced training and a dedication to patient well-being, she proudly serves as the friendly neighborhood endodontist in Uptown Houston. 
+            Her latest initiative, a virtual dental camp, aims to provide remote consultations and early dental advice — right from the comfort of your home.
           </p>
         </div>
       </section>
