@@ -90,10 +90,10 @@ const AdminPage = ({ setToken }) => {
                       {submission.images.map((imgUrl, index) => (
                         <img 
                           key={index} 
-                          src={`http://localhost:5000/${imgUrl}`}
+                          src={`https://virtualdentist-server.onrender.com/${imgUrl}`}
                           alt={`Uploaded by ${submission.name || 'user'}`} 
                           className="w-32 h-32 object-cover rounded" 
-                          onClick={() => setZoomImage(`http://localhost:5000/${imgUrl}`)}
+                          onClick={() => setZoomImage(`https://virtualdentist-server.onrender.com/${imgUrl}`)}
                         />
                       ))}
                     </div>
