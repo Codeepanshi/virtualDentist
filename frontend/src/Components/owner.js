@@ -9,13 +9,13 @@ const Owner = () => {
       <section className="flex flex-col md:flex-row items-center justify-center gap-10">
         <img
           src={Profile}
-          alt="Dr. Akshita Maan Dahiya"
+          alt="Dr. Akshita Mann"
           className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover"
         />
         <div className="max-w-2xl text-center md:text-left">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Dr. Akshita Maan Dahiya</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-2">Dr. Akshita Mann</h2>
           <p className="text-gray-600 text-justify leading-relaxed">
-            Dr. Akshita is a passionate and compassionate dentist with over <strong>3+ years of clinical experience</strong> 
+            Dr. Akshita is a passionate and compassionate dentist with over <strong>13+ years of clinical experience </strong> 
             in general and cosmetic dentistry. A graduate of a top dental university, she has conducted numerous dental 
             awareness camps across rural and urban communities. Her mission is to make dental care more <em>accessible, affordable, 
             and approachable</em> — even from the comfort of your home. This virtual dental camp is her latest initiative 
