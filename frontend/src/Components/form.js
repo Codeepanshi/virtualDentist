@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
   });
 
   try {
-    const response = await fetch('http://localhost:5000/api/submissions', {
+    const response = await fetch('https://virtualdentist-server.onrender.com/api/submissions', {
       method: 'POST',
       body: data,
     });
